@@ -4561,3 +4561,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-bet
   end
 })
 Tab:AddParagraph("<你猜 喵～>爱你哟😘")
+Tab:AddButton({
+  Name = "红圈格挡V3",
+  Callback = function ()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/RedCircleBlock"))()
+  end
+})
