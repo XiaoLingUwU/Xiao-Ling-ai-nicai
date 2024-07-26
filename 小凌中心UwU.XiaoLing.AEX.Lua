@@ -352,10 +352,10 @@ Tab:AddButton({
   end
 })
 
-local about = Window:MakeTab({
-    Name = "₪小凌音乐",
-    Icon = "rbxassetid://16060333448",
-    PremiumOnly = false
+local Tab= Window:MakeTab({
+	Name = "小凌音乐🤤",
+	Icon = "rbxassetid://16060333448",
+	PremiumOnly = false
 })
 local Section = Tab:AddSection({
 
