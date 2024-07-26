@@ -351,6 +351,117 @@ Tab:AddButton({
         game:GetService("TeleportService"):Teleport(game_id, game.Players.LocalPlayer)
   end
 })
+
+local about = Window:MakeTab({
+    Name = "₪小凌音乐",
+    Icon = "rbxassetid://16060333448",
+    PremiumOnly = false
+})
+local Section = Tab:AddSection({
+
+	Name = "以下是长音乐后面会更恶搞和复制ID"
+
+})
+  Tab:AddButton({
+  Name = "国歌[Krx版]",
+  Callback = function ()
+        local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://1845918434"
+    sound.Parent = game.Workspace
+    sound:Play()
+  end
+})
+  Tab:AddButton({
+  Name = "妈妈生的",
+  Callback = function ()
+        local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://6689498326"
+    sound.Parent = game.Workspace
+    sound:Play()
+  end
+})
+  Tab:AddButton({
+  Name = "Music Ball-CTT",
+  Callback = function ()
+        local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://9045415830"
+    sound.Parent = game.Workspace
+    sound:Play()
+  end
+})
+  Tab:AddButton({
+  Name = "电音",
+  Callback = function ()
+        local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://6911766512"
+    sound.Parent = game.Workspace
+    sound:Play()
+  end
+})
+  Tab:AddButton({
+  Name = "梗合集",
+  Callback = function ()
+        local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://8161248815"
+    sound.Parent = game.Workspace
+    sound:Play()
+  end
+})
+  Tab:AddButton({
+  Name = "Its been so long",
+  Callback = function ()
+        local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://6913550990"
+    sound.Parent = game.Workspace
+    sound:Play()
+  end
+})
+  Tab:AddButton({
+  Name = "Baller",
+  Callback = function ()
+        local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://13530439660"
+    sound.Parent = game.Workspace
+    sound:Play()
+  end
+})
+  Tab:AddButton({
+  Name = "男娘必听",
+  Callback = function ()
+        local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://6797864253"
+    sound.Parent = game.Workspace
+    sound:Play()
+  end
+})
+  Tab:AddButton({
+  Name = "螃蟹之舞",
+  Callback = function ()
+        local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://54100886218"
+    sound.Parent = game.Workspace
+    sound:Play()
+  end
+})
+  Tab:AddButton({
+  Name = "布鲁克林惨案",
+  Callback = function ()
+        local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://6783714255"
+    sound.Parent = game.Workspace
+    sound:Play()
+  end
+})
+  Tab:AddButton({
+  Name = "航空模拟器音乐",
+  Callback = function ()
+        local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://1838080629"
+    sound.Parent = game.Workspace
+    sound:Play()
+  end
+})
+
 local Tab= Window:MakeTab({
 	Name = "老外获得罗宝",
 	Icon = "rbxassetid://7743866529",
