@@ -82,7 +82,7 @@ TextLabel.Size = UDim2.new(0.5, 0, 0.1, 0)
 TextLabel.Font = Enum.Font.GothamBold
 TextLabel.TextColor3 = Color3.new(1, 1, 1)
 TextLabel.TextScaled = true
-TextLabel.Text = "冬凌：欢迎!已回归喵~"
+TextLabel.Text = "冬凌中心4.7.0[Beta]"
 TextLabel.Parent = ScreenGui
 
 local function animateCredits()
@@ -246,7 +246,7 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/flyspeed7/XiaoLing-OrionLib.WEN/main/%E5%B0%8F%E5%87%8C.UI.Lua"))()
-local Window = OrionLib:MakeWindow({IntroText = "你好主人~欢迎使用冬凌中心!",Name = "冬凌中心-1.4.2-撅我!", HidePremium = false, SaveConfig = true, ConfigFolder = "大哥这缝合脚本啊"})
+local Window = OrionLib:MakeWindow({IntroText = "你好主人~欢迎使用冬凌中心!",Name = "冬凌中心-4.7.0[Beta]", HidePremium = false, SaveConfig = true, ConfigFolder = "大哥这缝合脚本啊"})
 local about = Window:MakeTab({
     Name = "₪信息",
     Icon = "rbxassetid://7743878358",
@@ -458,13 +458,21 @@ Tab:AddButton({
 	end
 })
 Tab:AddColorpicker({ 
- Name = "颜色选择器", 
+ Name = "我是", 
  Default = Color3.fromRGB(255, 0, 0), 
  Callback = function(Value) 
      print(Value) 
  end           
  }) 
-  
+  Tab:AddButton({
+  Name = "小凌音乐🤤👍🏻",
+  Callback = function ()
+        local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://1845918434"
+    sound.Parent = game.Workspace
+    sound:Play()
+  end
+})
  Tab:AddButton({
 	Name = "₪Krx(LS落叶中心)〔推荐〕",
 	Callback = function()
@@ -956,6 +964,73 @@ Tab:AddTextbox({
 		game.Workspace.Gravity = Value
 	end
 })
+
+Tab:AddButton({	
+Name = "工具包",	
+Callback = function()	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()	  	
+     end
+})
+Tab:AddButton({
+	Name = "透视",
+	Callback = function()
+     loadstring(game:HttpGet('https://pastebin.com/raw/MA8jhPWT'))()
+  	end    
+})
+Tab:AddButton({
+	Name = "飞车",
+	Callback = function() loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
+	end
+})
+Tab:AddButton({
+	Name = "甩飞",
+	Callback = function() loadstring(game:HttpGet("https://pastebin.com/raw/GnvPVBEi"))()
+	end
+})
+Tab:AddButton({
+	Name = "无限跳",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+    end
+})
+
+Tab:AddButton({
+      Name = "阿尔宙斯V3.0 UI",
+      Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+      end
+})
+
+Tab:AddButton({
+  Name = "光影_2",
+  Default = false,
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
+  end
+})
+
+Tab:AddButton({
+  Name = "美丽天空",
+  Callback = function()
+    -- Roblox Graphics Enhancher
+    local light = game.Lighting
+    for i, v in pairs(light:GetChildren()) do
+      v:Destroy()
+    end
+
+    local ter = workspace.Terrain
+    local color = Instance.new("ColorCorrectionEffect")
+    local bloom = Instance.new("BloomEffect")
+    local sun = Instance.new("SunRaysEffect")
+    local blur = Inst
+  end
+})
+
+Tab:AddButton({
+	Name = "超高画质",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
+end
+})    
 
 Tab:AddButton({
 	Name = "Acrylix（通用）",
@@ -1761,79 +1836,7 @@ Tab:AddButton({
       Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/bark2.0.lua"))()
       end
-      })
-
-local Tab = Window:MakeTab({
-	Name = "₪通用2",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
 })
-Tab:AddButton({	
-Name = "工具包",	
-Callback = function()	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()	  	
-     end
-})
-Tab:AddButton({
-	Name = "透视",
-	Callback = function()
-     loadstring(game:HttpGet('https://pastebin.com/raw/MA8jhPWT'))()
-  	end    
-})
-Tab:AddButton({
-	Name = "飞车",
-	Callback = function() loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
-	end
-})
-Tab:AddButton({
-	Name = "甩飞",
-	Callback = function() loadstring(game:HttpGet("https://pastebin.com/raw/GnvPVBEi"))()
-	end
-})
-Tab:AddButton({
-	Name = "无限跳",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
-    end
-})
-
-Tab:AddButton({
-      Name = "阿尔宙斯V3.0 UI",
-      Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
-      end
-})
-
-Tab:AddButton({
-  Name = "光影_2",
-  Default = false,
-  Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
-  end
-})
-
-Tab:AddButton({
-  Name = "美丽天空",
-  Callback = function()
-    -- Roblox Graphics Enhancher
-    local light = game.Lighting
-    for i, v in pairs(light:GetChildren()) do
-      v:Destroy()
-    end
-
-    local ter = workspace.Terrain
-    local color = Instance.new("ColorCorrectionEffect")
-    local bloom = Instance.new("BloomEffect")
-    local sun = Instance.new("SunRaysEffect")
-    local blur = Inst
-  end
-})
-
-Tab:AddButton({
-	Name = "超高画质",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
-end
-})    
 
 local Tab = Window:MakeTab({
 	Name = "₪FE脚本",
