@@ -356,13 +356,19 @@ Tab:AddButton({
 
 local Tab= Window:MakeTab({
 	Name = "小凌音乐🤤",
-	Icon = "rbxassetid://16060333448",
+	Icon = "rbxassetid://16060333",
 	PremiumOnly = false
 })
 local Section = Tab:AddSection({
 
 	Name = "以下是长音乐后面会更恶搞和复制ID"
 
+})
+Tab:AddButton({	
+Name = "国外音乐脚本",	
+Callback = function()	 
+loadstring(game:HttpGet(('https://pastebin.com/raw/g97RafnE'),true))()	  	
+     end
 })
   Tab:AddButton({
   Name = "国歌[Krx版]",
