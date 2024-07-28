@@ -4917,3 +4917,17 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/SkibidiCen/RivalsAuto
 
      end
 })
+
+local Tab= Window:MakeTab({
+	Name = "后悔电梯",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+
+Tab:AddButton({	
+Name = "Justavegeguym-Hub",	
+Callback = function()	
+  
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Justaverageguym/Hub/main/Scripts/Regretevator.lua")))()
+     end
+})
