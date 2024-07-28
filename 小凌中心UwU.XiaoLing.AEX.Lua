@@ -101,7 +101,7 @@ end
 
 animateCredits()
 
-local creditText = "看这里{你猜 喵～}!我爱你😘!"
+local creditText = "看呐C屎人复活了!"
 local creditDuration = 5
 
 local decalIds = {
@@ -247,7 +247,7 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/flyspeed7/XiaoLing-OrionLib.WEN/main/%E5%B0%8F%E5%87%8C.UI."))()
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/flyspeed7/XiaoLing-OrionLib.WEN/main/%E5%B0%8F%E5%87%8C.UI.Lua"))()
 local Window = OrionLib:MakeWindow({IntroText = "你好主人~欢迎使用冬凌中心!",Name = "冬凌中心-4.7.0[Beta]", HidePremium = false, SaveConfig = true, ConfigFolder = "大哥这缝合脚本啊"})
 local about = Window:MakeTab({
     Name = "₪信息",
@@ -258,7 +258,7 @@ local about = Window:MakeTab({
 about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
-about:AddParagraph("你好 你猜 喵～ 我爱你😘.","")
+about:AddParagraph("你好Krx我爱你😘.","")
 about:AddParagraph("大家多多支持小云、Krx、丁丁dingding等...脚本作者","")
 about:AddParagraph("快和我一起露关😡😡","")
 local Tab= Window:MakeTab({
@@ -4676,13 +4676,13 @@ local Tab= Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddButton({
-  Name = "BOLL-HUB",
+  Name = "BDOLL-HUB",
   Callback = function ()
     _G.UI_Size = 200 -- config ui size
 loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
   end
 })
-Tab:AddParagraph("<你猜 喵～>爱你哟😘")
+Tab:AddParagraph("BDOLL需要卡密panda.net系统LOL,推荐红圈格挡")
 Tab:AddButton({
   Name = "红圈格挡V3",
   Callback = function ()
