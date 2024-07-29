@@ -1436,6 +1436,66 @@ loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))
 end
 })
 
+local Tab= Window:MakeTab({
+	Name = "BF",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+
+Tab:AddButton({	
+Name = "Matssune-Hub",	
+Callback = function()	
+  	loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/Matsune/main/matssunehub.lua"))() 
+     end
+})
+Tab:AddButton({	
+Name = "Spec-X",	
+Callback = function()	
+  	loadstring(game:HttpGet("https://raw.githubusercontent.com/xZPUHigh/Project-Spectrum/main/SpectrumX.lua"))() 
+     end
+})
+Tab:AddButton({	
+Name = "FREE-hub",	
+Callback = function()	
+  	loadstring(game:HttpGet("https://raw.githubusercontent.com/FreeeScripts/FREEHub/main/Loader", true))()
+     end
+})
+Tab:AddButton({	
+Name = "BLCK-Ez",	
+Callback = function()	
+  	loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/BLCK"))()
+     end
+})
+Tab:AddButton({	
+Name = "Valk_Hub",	
+Callback = function()	
+  	loadstring(game:HttpGet("https://raw.githubusercontent.com/Scriptssz/Folder_Script/main/Valk_Hub"))() 
+     end
+})
+Tab:AddButton({	
+Name = "Mingane-Hub",	
+Callback = function()	
+  	loadstring(game:HttpGet("https://raw.githubusercontent.com/Basicallyybeta/mingane/main/MinGamingNew.lua"))() 
+     end
+})
+Tab:AddButton({	
+Name = "Vector-Hub",	
+Callback = function()	
+  	loadstring(game:HttpGet("https://raw.githubusercontent.com/AAwful/VectorHub/main/Loader.lua"))() 
+     end
+})
+Tab:AddButton({	
+Name = "Hajibeza???",	
+Callback = function()	
+  	loadstring(game:HttpGet('https://raw.githubusercontent.com/hajibeza/Module/main/Mobile_Script.lua'))() 
+     end
+})
+Tab:AddButton({	
+Name = "Speed-Hub-X",	
+Callback = function()	
+  	loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX"))() 
+     end
+})
 local Tab = Window:MakeTab({
   Name = "₪极速传奇",
   Icon = "rbxassetid://7072719338",
