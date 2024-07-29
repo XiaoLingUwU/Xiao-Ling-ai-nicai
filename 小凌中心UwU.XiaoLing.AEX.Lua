@@ -5230,26 +5230,6 @@ Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/uuuuuuu/main/pressure%20god.lua"))()
      end
 })
-Tab:AddButton({	
-Name = "TTYJ-Hub-卡密处于DC",	
-Callback = function()	
-  	
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/NewCMain/main/Main.lua"))()
-     end
-})
-Tab:AddButton({	
-Name = "ttyj",	
-Callback = function()	
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/NewCMain/main/Main.lua"))()
-     end
-})
-Tab:AddButton({	
-Name = "DocYogurt-Hub",	
-Callback = function()	
-  	loadstring(game:HttpGet(('https://github.com/DocYogurt/Main/raw/main/Scripts/Pressure')))()
-     end
-})
 
 local Tab= Window:MakeTab({
 	Name = "奇怪的脚本",
@@ -5258,11 +5238,12 @@ local Tab= Window:MakeTab({
 })
 
 Tab:AddButton({	
-Name = "超长基吧戳死男娘屁股",	
+Name = "FE猫娘[R63😱]",	
 Callback = function()	
-  	loadstring(game:HttpGet("https://pastebin.com/raw/ESWSFND7", true))()
+  	    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
      end
 })
+
 Tab:AddButton({	
 Name = "RTX光影",	
 Callback = function()	
