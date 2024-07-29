@@ -4931,3 +4931,352 @@ Callback = function()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Justaverageguym/Hub/main/Scripts/Regretevator.lua")))()
      end
 })
+
+local Tab= Window:MakeTab({
+	Name = "压力[游戏]",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddButton({	
+Name = "PersonaL-手机版",	
+Callback = function()	
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LordEyes2/Script/main/PersonalHub"))()
+     end
+})
+Tab:AddButton({	
+Name = "personaL-电脑版",	
+Callback = function()	
+loadstring(game:HttpGet("https://pastebin.com/raw/MyhX2sT3"))()
+     end
+})
+Tab:AddButton({	
+Name = "压力通用ESP",	
+Callback = function()	
+  	
+local p = Instance.new("Part")
+p.Position = Vector3.new(-34, 1494, -1120)
+p.Size = Vector3.new(100, 10, 100)
+p.Transparency = 0
+p.Anchored = true  
+p.Parent = workspace
+local sp = 16
+local key = {}
+local monster = {}
+local trickster ={}
+local locker = {}
+local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source'))()
+local Window = OrionLib:MakeWindow({
+	Name = "Pressure Script",
+	HidePremium = false,
+	SaveConfig = true,
+	ConfigFolder = "PressureScript"
+})
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Lobby = Window:MakeTab({
+	Name = "Lobby",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Lobby:AddButton({
+	Name = "Join Random Game (could be yourself or another player)",
+	Callback = function()
+		game:GetService("TeleportService"):Teleport(12552538292, game.Players.LocalPlayer)
+	end    
+})
+Tab:AddSlider({
+	Name = "Set Walkspeed",
+	Min = 0,
+	Max = 100,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "sp",
+	Callback = function(Value)
+		sp = Value
+	end    
+})
+
+Tab:AddButton({
+	Name = "Fullbright",
+	Callback = function()
+		local lighting = game.Lighting
+		lighting.Brightness = 2
+		lighting.ClockTime = 14
+		lighting.FogEnd = 100000
+		lighting.GlobalShadows = false
+		lighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+	end    
+})
+Tab:AddButton({
+	Name = "Give Permanent NormalKey (pick a normalkey first)",
+	Callback = function()
+		game.Players.LocalPlayer.PlayerFolder.Inventory.NormalKeyCard:Destroy()
+		local d = Instance.new("NumberValue")
+		d.Name = "NormalKeyCard"
+		d.Parent = game.Players.LocalPlayer.PlayerFolder.Inventory
+	end    
+})
+Tab:AddButton({
+	Name = "Give Permanent InnerKeyCard (pick a InnerKeyCard first)",
+	Callback = function()
+		game.Players.LocalPlayer.PlayerFolder.Inventory.InnerKeyCard:Destroy()
+		local d = Instance.new("NumberValue")
+		d.Name = "InnerKeyCard"
+		d.Parent = game.Players.LocalPlayer.PlayerFolder.Inventory
+	end    
+})
+Tab:AddToggle({
+	Name = "no proxmitiyprompt duration",
+	Default = true,
+	Flag = "asdas",
+	Save = true
+})
+Tab:AddToggle({
+	Name = "Notify Monster",
+	Default = true,
+	Flag = "NotifyMonster",
+	Save = true
+})
+Tab:AddToggle({
+	Name = "Avoid any Monster (tested)",
+	Default = true,
+	Flag = "avoids",
+	Save = true
+})
+Tab:AddToggle({
+	Name = "No Eyefestation",
+	Default = true,
+	Flag = "noeyefestation",
+	Save = true
+})
+Tab:AddToggle({
+	Name = "No Searchlights",
+	Default = true,
+	Flag = "Searchlights",
+	Save = true
+})
+Tab:AddToggle({
+	Name = "No Steams",
+	Default = true,
+	Flag = "steaming",
+	Save = true
+})
+Tab:AddToggle({
+	Name = "Key ESP",
+	Default = true,
+	Flag = "keys",
+	Save = true,
+	Callback = function(Value)
+		for _, cham in pairs(key) do
+			cham.Enabled = Value
+		end
+	end    
+})
+Tab:AddToggle({
+	Name = "Monster ESP",
+	Default = true,
+	Flag = "monsters",
+	Save = true,
+	Callback = function(Value)
+		for _, cham in pairs(monster) do
+			cham.Enabled = Value
+		end
+	end    
+})
+Tab:AddToggle({
+	Name = "TricksterRoom ESP",
+	Default = true,
+	Flag = "TricksterRoomdanger",
+	Save = true,
+	Callback = function(Value)
+		for _, cham in pairs(trickster) do
+			cham.Enabled = Value
+		end
+	end    
+})
+Tab:AddToggle({
+	Name = "Monster Locker ESP",
+	Default = true,
+	Flag = "monsterlocker",
+	Save = true,
+	Callback = function(Value)
+		for _, cham in pairs(locker) do
+			cham.Enabled = Value
+		end
+	end    
+})
+local credits = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+credits:AddParagraph("Credits to playvora", "https://scriptblox.com/script/Pressure-script-15848")
+credits:AddParagraph("https://www.roblox.com/users/2207117597/profile")
+local others = Window:MakeTab({
+	Name = "other stuff",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+others:AddButton({
+	Name = "Infinity Yield",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end    
+})
+others:AddButton({
+	Name = "Dex",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/infyiff/backup/main/dex.lua'))()
+	end    
+})
+local function applykey(inst)
+	local text = Instance.new("BillboardGui")
+	text.Name = "key"
+	text.Adornee = inst
+	text.Size = UDim2.new(0, 200, 0, 50)
+	text.StudsOffset = Vector3.new(0, 2, 0)
+	text.AlwaysOnTop = true
+	text.Parent = game.CoreGui
+	local label = Instance.new("TextLabel")
+	label.Size = UDim2.new(1, 0, 1, 0)
+	label.Text = inst.Name
+	label.TextColor3 = Color3.new(1, 1, 1)
+	label.BackgroundTransparency = 1
+	label.TextStrokeTransparency = 0
+	label.TextScaled = true
+	label.Parent = text
+	table.insert(key, text)
+end
+local function applymos(inst)
+	local text = Instance.new("BillboardGui")
+	text.Name = "mons"
+	text.Adornee = inst
+	text.Size = UDim2.new(0, 200, 0, 50)
+	text.StudsOffset = Vector3.new(0, 2, 0)
+	text.AlwaysOnTop = true
+	text.Parent = game.CoreGui
+	local label = Instance.new("TextLabel")
+	label.Size = UDim2.new(1, 0, 1, 0)
+	label.Text = inst.Name
+	label.TextColor3 = Color3.new(1, 0, 0)
+	label.BackgroundTransparency = 1
+	label.TextStrokeTransparency = 0
+	label.TextScaled = true
+	label.Parent = text
+	table.insert(monster, text)
+end
+local function applylocker(inst)
+	local text = Instance.new("BillboardGui")
+	text.Name = "locker"
+	text.Adornee = inst
+	text.Size = UDim2.new(0, 200, 0, 50)
+	text.StudsOffset = Vector3.new(0, 2, 0)
+	text.AlwaysOnTop = true
+	text.Parent = game.CoreGui
+	local label = Instance.new("TextLabel")
+	label.Size = UDim2.new(1, 0, 1, 0)
+	label.Text = "Monster Locker"
+	label.TextColor3 = Color3.new(0.5, 0, 0.5) 
+	label.BackgroundTransparency = 1
+	label.TextStrokeTransparency = 0
+	label.TextScaled = true
+	label.Parent = text
+	table.insert(locker, text)
+end
+local function applytrickster(inst)
+	local text = Instance.new("BillboardGui")
+	text.Name = "locker"
+	text.Adornee = inst
+	text.Size = UDim2.new(0, 200, 0, 50)
+	text.StudsOffset = Vector3.new(0, 2, 0)
+	text.AlwaysOnTop = true
+	text.Parent = game.CoreGui
+	local label = Instance.new("TextLabel")
+	label.Size = UDim2.new(1, 0, 1, 0)
+	label.Text = "Do not enter"
+	label.TextColor3 = Color3.new(1, 1, 1) 
+	label.BackgroundTransparency = 1
+	label.TextStrokeTransparency = 0
+	label.TextScaled = true
+	label.Parent = text
+	table.insert(trickster, text)
+end
+local keycor = coroutine.create(function()
+	workspace.Rooms.DescendantAdded:Connect(function(inst)
+		if inst:IsA("Model") and inst:GetAttribute("InteractionType") == "KeyCard" then
+			applykey(inst)
+		end
+		if inst:IsA("Model") and inst:GetAttribute("InteractionType") == "InnerKeyCard" then
+			applykey(inst)
+		end
+	end)
+end)
+coroutine.resume(keycor)
+for _, v in ipairs(workspace.Rooms:GetDescendants()) do
+	if v:IsA("Model") and v:GetAttribute("InteractionType") == "KeyCard" then
+		applykey(v)
+	end
+	if v:IsA("Model") and v:GetAttribute("InteractionType") == "I
+     end
+})
+Tab:AddButton({	
+Name = "上帝模式 God mod",	
+Callback = function()	
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/uuuuuuu/main/pressure%20god.lua"))()
+     end
+})
+Tab:AddButton({	
+Name = "TTYJ-Hub-卡密处于DC",	
+Callback = function()	
+  	
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/NewCMain/main/Main.lua"))()
+     end
+})
+Tab:AddButton({	
+Name = "ttyj",	
+Callback = function()	
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/NewCMain/main/Main.lua"))()
+     end
+})
+Tab:AddButton({	
+Name = "DocYogurt-Hub",	
+Callback = function()	
+  	loadstring(game:HttpGet(('https://github.com/DocYogurt/Main/raw/main/Scripts/Pressure')))()
+     end
+})
+Tab:AddButton({	
+Name = "压力国人脚本",	
+Callback = function()	
+  	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zuohongjian/bjb/main/Pressure')))()
+     end
+})
+
+local Tab= Window:MakeTab({
+	Name = "奇怪的脚本",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddButton({	
+Name = "FE猫娘[R63😱]",	
+Callback = function()	
+  	    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
+     end
+})
+Tab:AddButton({	
+Name = "超长基吧戳死男娘屁股",	
+Callback = function()	
+  	loadstring(game:HttpGet("https://pastebin.com/raw/ESWSFND7", true))()
+     end
+})
+Tab:AddButton({	
+Name = "RTX光影",	
+Callback = function()	
+  	loadstring(game:HttpGet('https://pastebin.com/raw/Bkf0BJb3'))()
+     end
+})
