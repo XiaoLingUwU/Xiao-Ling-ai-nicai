@@ -4944,4 +4944,57 @@ Callback = function()
   	    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
      end
 })
+local Tab= Window:MakeTab({
+	Name = "The Rake",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddButton({	
+Name = "Zeerox-Hub",	
+Callback = function()		loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/ZeeroxHub/main/Loader.lua')()
+     end
+})
+Tab:AddButton({	
+Name = "CE-hub",	
+Callback = function()	
+  	loadstring(game:HttpGet('https://raw.githubusercontent.com/scriptemt/CE-Technologies/main/script', true))()
+     end
+})
+Tab:AddButton({
+  Name = "The Rake小云☁",
+  Callback = function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/The%20Rake.lua"))()
+  end
+})
+Tab:AddButton({	
+Name = "Tiger_Admin",	
+Callback = function()	
+  	loadstring(game:HttpGet('https://raw.githubusercontent.com/H17S32/Tiger_Admin/main/MAIN'))() 
+     end
+})
+Tab:AddButton({	
+Name = "Sussy-Tech",	
+Callback = function()	
+  	loadstring(game:HttpGet("https://raw.githubusercontent.com/Sussy-Tech/Scripts/main/RakeScript.lua"))()
+     end
+})
+Tab:AddButton({	
+Name = "REMASTERED",	
+Callback = function()	
+  	loadstring(game:HttpGet("https://raw.githubusercontent.com/CHEATERFUN/The-Rake-REMASTERED-Script/main/Source.lua"))()
+     end
+})
+Tab:AddButton({	
+Name = "filesV3",	
+Callback = function()	
+  	
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c2c886534e662c614423ee5748353fe4.lua"))()
 
+     end
+})
+Tab:AddButton({	
+Name = "Devva...",	
+Callback = function()	
+  	loadstring(game:HttpGet("https://gist.githubusercontent.com/OtarDevv/49186047e758b9b263ec5a6583a99b4b/raw/d98e767de166fa6361066e9d43ec13ab05fdad89/Rake"))();
+     end
+})
