@@ -5250,24 +5250,13 @@ Callback = function()
   	loadstring(game:HttpGet(('https://github.com/DocYogurt/Main/raw/main/Scripts/Pressure')))()
      end
 })
-Tab:AddButton({	
-Name = "压力国人脚本",	
-Callback = function()	
-  	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zuohongjian/bjb/main/Pressure')))()
-     end
-})
 
 local Tab= Window:MakeTab({
 	Name = "奇怪的脚本",
 	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
 })
-Tab:AddButton({	
-Name = "FE猫娘[R63😱]",	
-Callback = function()	
-  	    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
-     end
-})
+
 Tab:AddButton({	
 Name = "超长基吧戳死男娘屁股",	
 Callback = function()	
