@@ -247,7 +247,7 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoLingUwU/XiaoLing-Orion-Lib.UI.NEO-X/main/O-L.UI.Lua"))()
+local OrionLib =  loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoLingUwU/EZ-/main/XiaoLing.UI-Kong-AA.Lua"))()
 local Window = OrionLib:MakeWindow({IntroText = "啊米诺斯C屎人不c屎却来骂我😡",Name = "冬凌中心-4.8.5[Beta]", HidePremium = false, SaveConfig = true, ConfigFolder = "大哥这缝合脚本啊"})
 local about = Window:MakeTab({
     Name = "₪信息",
@@ -271,17 +271,6 @@ Tab:AddButton({
   Callback = function ()
    loadstring(utf8.char((function() return table.unpack({108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,67,104,105,110,97,81,89,47,45,47,109,97,105,110,47,37,69,54,37,56,51,37,56,53,37,69,52,37,66,65,37,57,49,34,41,41,40,41})end)()))() 
   end
-})
-Tab:AddButton({
-  Name = "斌脚本2.0.1",
-  Callback = function () loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\66\73\78\106\105\97\111\98\122\120\54\47\66\73\78\106\105\97\111\47\109\97\105\110\47\66\73\78\46\108\117\97\34\41\41\40\41\10")("BIN制作")
-  end
-})
-Tab:AddButton({
-	Name = "复制斌脚本卡密",
-	Callback = function()
-     setclipboard("bin2024HADE")
-  	end
 })
 
 local Tab= Window:MakeTab({
@@ -472,7 +461,7 @@ loadstring(game:HttpGet(('https://pastebin.com/raw/g97RafnE'),true))()
 
 local Tab= Window:MakeTab({
 	Name = "老外获得罗宝",
-	Icon = "rbxassetid://7743866529",
+	Icon = "rbxassetid://11560341824",
 	PremiumOnly = false
 })
 local Section = Tab:AddSection({
@@ -534,7 +523,7 @@ Tab:AddSlider({
 
 	Default = 16,
 
-	Color = Color3.fromRGB(255,255,255),
+	Color = Color3.fromRGB(127,251,111),
 
 	Increment = 1,
 
@@ -557,7 +546,7 @@ Tab:AddSlider({
 
 	Default = 50,
 
-	Color = Color3.fromRGB(255,255,255),
+	Color = Color3.fromRGB(127,251,111),
 
 	Increment = 1,
 
