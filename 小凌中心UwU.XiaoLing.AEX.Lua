@@ -82,7 +82,7 @@ TextLabel.Size = UDim2.new(0.5, 0, 0.1, 0)
 TextLabel.Font = Enum.Font.GothamBold
 TextLabel.TextColor3 = Color3.new(1, 1, 1)
 TextLabel.TextScaled = true
-TextLabel.Text = "冬凌中心4.7.0[Beta]"
+TextLabel.Text = "冬凌中心4.9.0[Beta]"
 TextLabel.Parent = ScreenGui
 
 local function animateCredits()
@@ -248,7 +248,7 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 local OrionLib =   loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoLingUwU/XiaoLing_-_-R_-_-O_-_-B_-_-L_-_-O_-_-X_-UI_-X/main/XiaoLing.UI-Kong-AA.Lua"))()
-local Window = OrionLib:MakeWindow({IntroText = "啊米诺斯C屎人不c屎却来骂我😡",Name = "冬凌中心-4.8.5[Beta]", HidePremium = false, SaveConfig = true, ConfigFolder = "大哥这缝合脚本啊"})
+local Window = OrionLib:MakeWindow({IntroText = "啊米诺斯C屎人不c屎却来骂我😡",Name = "冬凌中心[Beta]", HidePremium = false, SaveConfig = true, ConfigFolder = "大哥这缝合脚本啊"})
 local about = Window:MakeTab({
     Name = "₪信息",
     Icon = "rbxassetid://7743878358",
