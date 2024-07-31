@@ -247,7 +247,7 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local OrionLib =  loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoLingUwU/LOL.UI/main/XiaoLing.UI-Kong-AA.Lua"))()
+local OrionLib =   loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoLingUwU/XiaoLing_-_-R_-_-O_-_-B_-_-L_-_-O_-_-X_-UI_-X/main/XiaoLing.UI-Kong-AA.Lua"))()
 local Window = OrionLib:MakeWindow({IntroText = "啊米诺斯C屎人不c屎却来骂我😡",Name = "冬凌中心-4.8.5[Beta]", HidePremium = false, SaveConfig = true, ConfigFolder = "大哥这缝合脚本啊"})
 local about = Window:MakeTab({
     Name = "₪信息",
