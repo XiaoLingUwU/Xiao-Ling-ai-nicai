@@ -5044,6 +5044,31 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c2c886534e662c
 Tab:AddButton({	
 Name = "Devva...",	
 Callback = function()	
-  	loadstring(game:HttpGet("https://gist.githubusercontent.com/OtarDevv/49186047e758b9b263ec5a6583a99b4b/raw/d98e767de166fa6361066e9d43ec13ab05fdad89/Rake"))();
+  	loadstring(game:HttpGet("https://gist.githubusercontent.com/OtarDevv/49186047e758b9b263ec5a6583a99b4b/raw/d98e767de166fa6361066e9d43ec13ab05fdad89/Rake"))()
+     end
+})
+local Tab= Window:MakeTab({
+	Name = "压力[类似Doors]",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddButton({	
+Name = "GOA-HUB",	
+Callback = function()	
+  	
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nevcit/Pressure/main/GOA_HUB"))()
+     end
+})
+Tab:AddButton({	
+Name = "Persona_Hub",	
+Callback = function()	
+  	loadstring(game:HttpGet("https://raw.githubusercontent.com/LordEyes2/Script/main/PersonalHub"))()
+
+     end
+})
+Tab:AddButton({	
+Name = "DocYongurt",	
+Callback = function()	
+  	loadstring(game:HttpGet("https://raw.githubusercontent.com/DocYogurt/Main/main/Scripts/Pressure"))()
      end
 })
